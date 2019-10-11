@@ -167,13 +167,11 @@ p {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  border: 2px solid purple;
 }
 @media (max-width: 500px) {
   .navigation {
     width: 100%;
     margin: 0 auto;
-    border: 1px solid green;
   }
 }
 .navigation .logo {
@@ -203,23 +201,16 @@ footer {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 500px) {
-  .home .containter-home .intro {
-    margin: 0 auto;
-    width: 100%;
-  }
-}
-@media (max-width: 500px) and (max-width: 500px) {
-  .home .containter-home .intro .introsky {
-    width: 50%;
-    border: 3px solid peru;
-  }
-}
-.home .containter-home h2 {
+.home .containter-home .intro h2 {
   padding: 15px;
 }
-.home .containter-home p {
+.home .containter-home .intro p {
   padding: 0 15px;
+}
+@media (max-width: 500px) {
+  .home .containter-home .intro .introsky {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .home .space-images .blast {
@@ -253,6 +244,11 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text {
   width: 50%;
