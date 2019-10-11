@@ -1,1 +1,20 @@
 // Mixins Here
+.button-mixer(@bg-color, @txt-color, @width){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @bg-color;
+    margin: 0 10px 20px;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 5px;
+    color:@txt-color;
+    &:hover {
+        background-color: @txt-color;
+        color: @bg-color;
+        }
+}
+
+
+

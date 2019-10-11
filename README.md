@@ -34,13 +34,64 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Both adaptive and response use media queries and are an improvement in the experience of a website across  different devices compared to fixed websites. However:
+Adaptive websites accommodate different devices at specific breakpoints in design. However, it lacks in accommodating for thousands of devices because care was only given to specific designs at certain breakpoints. 
+
+Adaptive Layout
+Design is often desktop, tablet, or phone
+Media queries are used
+Layout widths are hard coded at each media query
+Quick deployment for specific devices
+
+Responsive layouts combine features of fixed, adaptive, and fluid websites into one seamless experience. Media queries are used to constrain responsive units so that as the viewport expands or shrinks, you get an experience that looks and functions beautifully across thousands of devices and screen sizes. Responsive sites take more effort and are the standard for long term projects.
+
+Responsive Layout
+Design is often divided among desktop, tablet, or phone
+Responsive units are used throughout the site
+Media queries are used
+Site accommodates thousands of devices and takes longer to build
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means you design and code for a mobile device first and expand layout or features as you gain more screen space toward desktop. For CSS implementations mobile first means general styles are pointed at the phone and you utilize min-width media queries to layer on more complexity as you grow toward desktop views.
+
+Desktop first means you design and code for desktop first and decrease the layout or features as you lose screen space towards mobile. For CSS implementations desktop first means general styles are pointed at the desktop and you utilize max-width media queries to layer less complexity as you shrink toward mobile views.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+px is an absolute length unit
+
+em is a relative length unit. This means the system will adjust to its surroundings. One of the issues with em is its inherited calculation. Sometimes changing just one parent element can lead to a cascade of skewed sizes.
+
+The rem (root em) unit is referred to as a relative length unit. This unit looks to the root element in a page. Usually the root element is going to be the html tag in a web page or application. Pro Tip: Using a hard coded pixel on the html tag is bad practice as it overwrites the user’s default settings on their browser.  Instead, use a % based unit to be more accessible. A great trick is to use 62.5% as the base value because then you can convert rem units by the power of 10 instead of 16. 62.5 * .16 = 10. 
+
+62.5% font size means 1 rem = 10px
+
+
 4. How would you describe preprocessing to someone new to CSS?
 
+CSS (Cascading Style Sheets) is a language used to code the style of a page. Preprocessing is simply a more robust syntax for CSS that is written in a different language than CSS. That language is then compiled or translated into normal CSS.
+Syntax (LESS) -> Compiler (JavaScript) -> CSS
+
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Node is the compiler that converts the language (LESS) into normal CSS.
+Yarn is the go to package manager at Lambda 
+LESS (Leaner Style Sheets) is the language or syntax we  use to write our code
+3 main preprocessing concepts we need to understand:
+The language or syntax that we use to write our code (LESS)
+The compiler that converts the language (Node)
+The CSS that is outputted from the compiler (Normal CSS)
+The concept of a compiler is my favorite because it is a familiar concept and I understand it. The concept of a yarn is the most challenging. It gives me the heeby jeebies! 
+
+Mixins melts my brain. Too much nesting within nests. It’s kind of like inception, lol. Kind of unimpressed with the concept? Why not just code everything instead of nesting classes within classes?
+
+Nesting is super clear. Don’t nest more than 4 levels deep.
+Nested at seems simple enough. Bubbling media queries means that the @ media query moves from being nested to wrapping (moving to the outside) also seems unimpressive. Again, it’s nice to have simple math operations but kinda underwhelmed.
+
+I think I’ll appreciate it more once we start using the code more often.code
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
