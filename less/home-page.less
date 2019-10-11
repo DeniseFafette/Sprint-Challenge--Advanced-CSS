@@ -2,8 +2,15 @@
 
 .home {
 
-
-  .intro {cle
+  .containter-home {
+    .intro {
+      @media @mobile {
+        margin: 0 auto;
+        width: 100%;
+        }
+      }
+    }
+   
 
     h2 {
       padding: 15px;
@@ -16,9 +23,18 @@
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    
+    @media @mobile {
+      .blast {
+        width:100%;
+      }
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
@@ -74,4 +90,4 @@
       }
     }
   }
-}// home
+}
